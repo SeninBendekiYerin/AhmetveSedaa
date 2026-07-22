@@ -103,7 +103,7 @@ function heart(x,y){
 
 const h=document.createElement("div");
 
-h.innerHTML="❤️";
+h.innerHTML="🩷";
 
 h.style.position="fixed";
 
@@ -159,6 +159,6 @@ const finishButton=document.querySelector("#finish button");
 
 finishButton.addEventListener("click",()=>{
 
-alert("❤️ Umarım bu hikâyenin devamını birlikte yazarsınız.");
+alert("🩷 Umarım bu hikâyenin devamını birlikte yazarsınız.");
 
 });
