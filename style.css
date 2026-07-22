@@ -1,0 +1,345 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#050505;
+color:white;
+font-family:'Poppins',sans-serif;
+overflow-x:hidden;
+
+}
+
+/* Hareketli yıldızlar */
+
+#stars{
+
+position:fixed;
+width:100%;
+height:100%;
+left:0;
+top:0;
+
+background:
+radial-gradient(white 1px,transparent 1px),
+radial-gradient(white 1px,transparent 1px);
+
+background-size:80px 80px;
+
+opacity:.18;
+
+animation:stars 80s linear infinite;
+
+z-index:-1;
+
+}
+
+@keyframes stars{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-500px);
+
+}
+
+}
+
+/* Giriş */
+
+#login{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+padding:25px;
+
+text-align:center;
+
+}
+
+#login h1{
+
+font-size:38px;
+
+max-width:900px;
+
+line-height:1.4;
+
+margin-bottom:30px;
+
+}
+
+#login p{
+
+opacity:.8;
+
+margin-bottom:25px;
+
+}
+
+input{
+
+width:300px;
+
+padding:18px;
+
+border:none;
+
+border-radius:18px;
+
+font-size:18px;
+
+text-align:center;
+
+outline:none;
+
+margin-bottom:20px;
+
+background:#161616;
+
+color:white;
+
+}
+
+button{
+
+padding:18px 45px;
+
+border:none;
+
+border-radius:18px;
+
+cursor:pointer;
+
+font-size:18px;
+
+background:#ff4d6d;
+
+color:white;
+
+transition:.35s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+background:#ff6b86;
+
+}
+
+/* Ana Sayfa */
+
+#main{
+
+display:none;
+
+}
+
+.photo{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+padding:30px;
+
+}
+
+.photo img{
+
+width:90%;
+
+max-width:420px;
+
+border-radius:30px;
+
+box-shadow:
+
+0 0 40px rgba(255,255,255,.08);
+
+transition:1.5s;
+
+}
+
+.photo img:hover{
+
+transform:scale(1.03);
+
+}
+
+.text{
+
+max-width:700px;
+
+margin-top:35px;
+
+text-align:center;
+
+}
+
+.text h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:58px;
+
+margin-bottom:25px;
+
+color:#ffdede;
+
+}
+
+.text p{
+
+font-size:22px;
+
+line-height:1.9;
+
+opacity:.92;
+
+}
+
+/* Mektup */
+
+#letter{
+
+padding:120px 25px;
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+#letter h1{
+
+font-family:'Great Vibes';
+
+font-size:75px;
+
+margin-bottom:45px;
+
+}
+
+#letter p{
+
+font-size:22px;
+
+line-height:2.2;
+
+}
+
+/* Final */
+
+#finish{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+#finish h1{
+
+font-size:55px;
+
+line-height:1.5;
+
+margin-bottom:30px;
+
+}
+
+#finish p{
+
+font-size:25px;
+
+line-height:2;
+
+margin-bottom:40px;
+
+}
+
+/* Telefon */
+
+@media(max-width:768px){
+
+#login h1{
+
+font-size:28px;
+
+}
+
+.text h2{
+
+font-size:42px;
+
+}
+
+.text p{
+
+font-size:18px;
+
+}
+
+#letter h1{
+
+font-size:55px;
+
+}
+
+#letter p{
+
+font-size:18px;
+
+}
+
+#finish h1{
+
+font-size:34px;
+
+}
+
+#finish p{
+
+font-size:18px;
+
+}
+
+}
